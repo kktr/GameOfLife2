@@ -10,6 +10,7 @@ describe('GameOfLife', () => {
       [0, 0, 0],
       [0, 0, 0],
     ];
+
     //when
     const gameOfLife = new GameOfLife(board).tick();
 
@@ -28,6 +29,7 @@ describe('GameOfLife', () => {
       [0, 1, 0],
       [0, 0, 0],
     ];
+
     //when
     const gameOfLife = new GameOfLife(board).tick();
 
@@ -46,6 +48,7 @@ describe('GameOfLife', () => {
       [0, 0, 0],
       [0, 0, 0],
     ];
+
     //when
     const gameOfLife = new GameOfLife(board).tick();
 
@@ -64,6 +67,7 @@ describe('GameOfLife', () => {
       [1, 1, 0],
       [0, 0, 0],
     ];
+
     //when
     const gameOfLife = new GameOfLife(board).tick();
 
@@ -72,6 +76,29 @@ describe('GameOfLife', () => {
       [1, 0, 1],
       [1, 0, 1],
       [0, 0, 0],
+    ]);
+  });
+
+  it('should return proper board', () => {
+    //given
+    const board: IBoard = [
+      [0, 0, 0, 0, 0],
+      [0, 1, 1, 0, 0],
+      [0, 1, 0, 0, 0],
+      [0, 0, 0, 1, 1],
+      [0, 0, 0, 1, 0],
+    ];
+
+    //when
+    const gameOfLife = new GameOfLife(board).tick();
+
+    //then
+    expect(gameOfLife.getBoard()).toEqual([
+      [0, 0, 0, 0, 0],
+      [0, 1, 1, 0, 0],
+      [0, 1, 0, 1, 0],
+      [0, 0, 1, 1, 1],
+      [0, 0, 0, 1, 1],
     ]);
   });
 });
