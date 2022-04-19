@@ -1,6 +1,6 @@
 {
   "name": "game-of-life-kktr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "game-of-life with null object pattern",
   "type": "module",
   "main": "build/GameOfLife.ts",
