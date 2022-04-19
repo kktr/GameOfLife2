@@ -11,10 +11,10 @@ describe('GameOfLife', () => {
       [0, 0, 0],
     ];
     //when
-    const gameOfLife = new GameOfLife(board);
+    const gameOfLife = new GameOfLife(board).tick();
 
     //then
-    expect(gameOfLife.tick().getBoard()).toEqual([
+    expect(gameOfLife.getBoard()).toEqual([
       [0, 0, 0],
       [0, 0, 0],
       [0, 0, 0],
@@ -29,10 +29,10 @@ describe('GameOfLife', () => {
       [0, 0, 0],
     ];
     //when
-    const gameOfLife = new GameOfLife(board);
+    const gameOfLife = new GameOfLife(board).tick();
 
     //then
-    expect(gameOfLife.tick().getBoard()).toEqual([
+    expect(gameOfLife.getBoard()).toEqual([
       [0, 0, 0],
       [0, 0, 0],
       [0, 0, 0],
@@ -47,12 +47,30 @@ describe('GameOfLife', () => {
       [0, 0, 0],
     ];
     //when
-    const gameOfLife = new GameOfLife(board);
+    const gameOfLife = new GameOfLife(board).tick();
 
     //then
-    expect(gameOfLife.tick().getBoard()).toEqual([
+    expect(gameOfLife.getBoard()).toEqual([
       [0, 1, 0],
       [0, 1, 0],
+      [0, 0, 0],
+    ]);
+  });
+
+  it('cell with 4 neighbors should die and cell with 3 neighbors should be born', () => {
+    //given
+    const board: IBoard = [
+      [1, 1, 1],
+      [1, 1, 0],
+      [0, 0, 0],
+    ];
+    //when
+    const gameOfLife = new GameOfLife(board).tick();
+
+    //then
+    expect(gameOfLife.getBoard()).toEqual([
+      [1, 0, 1],
+      [1, 0, 1],
       [0, 0, 0],
     ]);
   });
