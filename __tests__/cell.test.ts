@@ -1,14 +1,5 @@
-type ICellState = 1 | 0;
-type INumberOfNeighbors = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-type IBoard = ICellState[][];
+import { Cell } from './../src/cell';
 
-class Cell {
-  static state(alive: ICellState, neighbors: INumberOfNeighbors) {
-    if (neighbors === 3) return 1;
-    if (alive && neighbors === 2) return 1;
-    return 0;
-  }
-}
 describe('Cell', () => {
   it('alive cell should die if have 0 neighbors', () => {
     expect(Cell.state(1, 0)).toBe(0);
