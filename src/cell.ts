@@ -1,3 +1,4 @@
+import { ICellState } from '../interfaces/ICellState';
 import { INumberOfNeighbors } from '../interfaces/INumberOfNeighbors';
 
 export class Cell {
