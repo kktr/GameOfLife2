@@ -19,5 +19,11 @@
     "noImplicitThis": false,
     "strictNullChecks": false
   },
-  "include": ["src/**/*", "__tests__/**/*", "interfaces/**/*"]
+  "include": [
+    "src/**/*",
+    "__tests__/**/*",
+    "interfaces/**/*",
+    "helpers/**/*",
+    "*.d.ts"
+  ]
 }
