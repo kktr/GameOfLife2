@@ -1,8 +1,13 @@
 {
-  "name": "node-typescript-boilerplate",
-  "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "name": "game-of-life-kktr",
+  "version": "1.0.0",
+  "description": "game-of-life with null object pattern",
   "type": "module",
+  "main": "build/GameOfLife.ts",
+  "types": "build/iGameOfLife.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "engines": {
     "node": ">= 16.13 <17"
   },
@@ -32,8 +37,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
-  "license": "Apache-2.0",
+  "author": "ktkr (https://github.com/kktr)",
+  "license": "Apache APLv2",
   "dependencies": {
     "tslib": "~2.3.1"
   },
