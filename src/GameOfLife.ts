@@ -10,6 +10,10 @@ export class GameOfLife {
     return this.board;
   }
 
+  public printBoard() {
+    console.log(this.board);
+  }
+
   public tick() {
     this.board = this.board.map((row, rowIndex) => {
       return row.map((cell, cellIndex) => {

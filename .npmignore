@@ -1,0 +1,15 @@
+src
+helpers
+interfaces
+__tests__
+.github
+tsconfig.json
+tslintrc.json
+.prettierrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitignore
+.npmignore
+jest.config.js
+tsconfig.relase.json
