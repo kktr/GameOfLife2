@@ -20,7 +20,6 @@
     "strictNullChecks": false,
     "allowJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
     "declarationMap": true
   },
   "include": [
