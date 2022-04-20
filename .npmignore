@@ -12,4 +12,4 @@ tslintrc.json
 .gitignore
 .npmignore
 jest.config.js
-tsconfig.relase.json
+tsconfig.release.json

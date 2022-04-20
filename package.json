@@ -1,10 +1,10 @@
 {
   "name": "game-of-life-kktr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "game-of-life with null object pattern",
   "type": "module",
   "main": "build/GameOfLife.js",
-  "types": "build/iGameOfLife.d.ts",
+  "types": "build/GameOfLife.d.ts",
   "engines": {
     "node": ">= 16.13 <17"
   },
