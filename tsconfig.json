@@ -18,13 +18,7 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "strictNullChecks": false,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     "allowJs": true,
-=======
->>>>>>> main
->>>>>>> 3c53a24bd11f2386e49f93548dfb1d7945ad9ab7
     "declaration": true,
     "emitDeclarationOnly": true,
     "declarationMap": true
