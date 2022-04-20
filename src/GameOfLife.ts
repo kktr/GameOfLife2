@@ -12,6 +12,7 @@ export class GameOfLife {
 
   public printBoard() {
     console.log(this.board);
+    return this;
   }
 
   public tick() {
