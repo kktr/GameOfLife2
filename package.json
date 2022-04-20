@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "game-of-life with null object pattern",
   "type": "module",
-  "main": "build/GameOfLife.ts",
+  "main": "build/GameOfLife.js",
   "types": "build/iGameOfLife.d.ts",
   "files": [
     "build/**/*"
